@@ -1,10 +1,5 @@
 // ADXL335 Test Program
 
-// Old Values
-// Coincidentally, the difference between these is 127, perfect for MIDI
-//#define MIN 270
-//#define MAX 397
-
 #define CENTER 371  // Same for x, y, and z
 #define RANGE  100
 #define MAX    (CENTER+RANGE)
@@ -15,7 +10,7 @@
 void setup()
 {
 //Serial.begin(31250);     // Raw MIDI
-  Serial.begin(38400);     // Direct connect
+  Serial.begin(38400);     // Direct connect or XBee
   pinMode(LED, OUTPUT);
 }
 
